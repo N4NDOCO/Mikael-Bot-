@@ -40,8 +40,9 @@ async def contas(interaction: discord.Interaction):
 
 ✅ Contas seguras
 📦 Entrega em até 2 dias
-❗ Chame o Entregador com /call e escolha a conta desejada
+❗ Chame o Entregador no sever com /call e escolha a conta desejada
 💰 Pagamento via PIX: world.blox018@gmail.com
+🚨 Não pague até o vendedor responder 🚨
 """
     await interaction.user.send(msg)
     await interaction.response.send_message("Enviei a lista de contas em DM!", ephemeral=True)
