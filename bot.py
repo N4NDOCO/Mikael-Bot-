@@ -4,6 +4,7 @@ from discord import app_commands
 import os
 from config import TOKEN, GUILD_ID, CARGO_ENTREGADOR
 
+# ----- Intents -----
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True  # SERVER MEMBERS INTENT
@@ -15,8 +16,10 @@ bot = commands.Bot(command_prefix="/", intents=intents)
 async def on_ready():
     guild = discord.Object(id=GUILD_ID)  # registra comandos apenas nesse servidor
     try:
+        # Garante que os comandos slash do bot sejam sincronizados
         bot.tree.copy_global_to(guild=guild)
         await bot.tree.sync(guild=guild)
+        print(f"Comandos sincronizados no servidor {GUILD_ID}")
     except Exception as e:
         print(f"Erro ao sincronizar comandos: {e}")
 
@@ -40,11 +43,13 @@ async def contas(interaction: discord.Interaction):
 
 ✅ Contas seguras
 📦 Entrega em até 2 dias
-❗ Chame o Entregador no sever com /call e escolha a conta desejada
+❗ Chame um Entregador no servidor com /call e escolha a conta desejada
 💰 Pagamento via PIX: world.blox018@gmail.com
 🚨 Não pague até o vendedor responder 🚨
 """
+    # Envia DM
     await interaction.user.send(msg)
+    # Resposta pública efêmera
     await interaction.response.send_message("Enviei a lista de contas em DM!", ephemeral=True)
 
 # ----- /call -----
@@ -56,9 +61,11 @@ async def call(interaction: discord.Interaction):
         await interaction.response.send_message("Cargo Entregador não encontrado!", ephemeral=True)
         return
 
+    # Menciona apenas membros com o cargo
     entregadores = [m.mention for m in guild.members if cargo in m.roles]
+
     if entregadores:
-        await interaction.response.send_message(" ".join(entregadores))
+        await interaction.response.send_message("Entregadores disponíveis: " + ", ".join(entregadores), ephemeral=True)
     else:
         await interaction.response.send_message("Nenhum entregador disponível!", ephemeral=True)
 
