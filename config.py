@@ -1,5 +1,6 @@
 import os
 
-TOKEN = os.environ.get("TOKEN")  # Pega o token seguro do Koyeb
+TOKEN = os.environ.get("TOKEN")
 GUILD_ID = 1465477542919016625
 CARGO_ENTREGADOR = "Entregador"
+CALL_CHANNEL_ID = 1465657430292697151
