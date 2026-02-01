@@ -20,6 +20,7 @@ class Contas(commands.Cog):
             "• Level Max Lv Max (2800) – R$8\n"
             "• Fruta no Inv Lv Max (2800) – R$12\n"
             "• Tudo Random Aleatória – R$10\n\n"
+            "• Conta Personalizaa -"
             "✅ Contas seguras\n"
             "📦 Entrega em até 2 dias\n"
             "❗ Chame o Entregador com /call e escolha a conta desejada\n"
