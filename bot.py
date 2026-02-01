@@ -29,7 +29,7 @@ async def on_ready():
 @bot.tree.command(name="contas", description="Receba a lista de contas")
 async def contas(interaction: discord.Interaction):
     msg = """
-    **--🥊 Estilos de luta--**
+      **--🥊 Estilos de luta--**
     • God Human Lv Max (2800) – R$20
     • Dragon Talor v2 (Evo) Lv Max (2800) – R$15
     • Sharkman Karatê v2 (Evo) Lv Max (2800) – R$15
@@ -45,17 +45,20 @@ async def contas(interaction: discord.Interaction):
     • Você escolhe dentre as opções.
 
     **--Informações--**
-    ✅ Contas seguras
-    📦 Entrega em até 2 dias
-    ❗ Chame o Entregador com /call e escolha a conta desejada
-    👀 Veja seu desconto no chat ⏳┃afk-status
+    ✅ Contas seguras.
+    📦 Entrega em até 2 dias.
+    👀 Veja seu desconto no chat ⏳┃afk-status.
+    ❗ Chame o Entregador com /call
+     e escolha a conta desejada.
 
     **--Pagamento--**
-    💰 Pagamento apenas via PIX
+    💰 Pagamento apenas via PIX.
     💸 Pix: world.blox018@gmail.com
     🚨 Não pague ainda 🚨
 
-    **⏳ Aguarde o Entregador checar conta em stock e após isso escolha a sua.**
+    **⏳ Aguarde o Entregador checar conta em stock e 
+      após isso escolha a sua.**
+      
     """
     # Envia DM
     await interaction.user.send(msg)
