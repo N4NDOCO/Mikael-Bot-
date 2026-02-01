@@ -1,5 +1,3 @@
-Esse é o codigo do bot.py quero apenas que mude pra isso chat, não tire os outros comandos nem mensagens, e tudo 100% funcional
-
 import discord
 from discord.ext import commands
 from discord import app_commands
