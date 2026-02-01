@@ -29,20 +29,28 @@ async def on_ready():
 @bot.tree.command(name="contas", description="Receba a lista de contas")
 async def contas(interaction: discord.Interaction):
     msg = """
---🥊 Estilos de luta--
+**--🥊 Estilos de luta--**
 • God Human Lv Max (2800) – R$20
 • Dragon Talor v2 (Evo) Lv Max (2800) – R$15
 • Sharkman Karatê v2 (Evo) Lv Max (2800) – R$15
 • Eletric Claw Lv Max (2800) – R$10
 
---📦 Contas Padrão--
+**--📦 Contas Padrão--**
 • 100M Berries Lv Max (2800) – R$20
 • Level Max Lv Max (2800) – R$8
 • Fruta no Inv Lv Max (2800) – R$12
 • Tudo Random Aleatória – R$10
 
---🗒️ Conta Personalizada--
+**--🗒️ Conta Personalizada--**
 • Você escolhe dentre as opções.
+
+✅ Contas seguras
+📦 Entrega em até 2 dias
+❗ Chame o Entregador com **/call** e escolha a conta desejada
+💰 Pagamento apenas via PIX
+💸 Pix: world.blox018@gmail.com
+🚨 **Não pague ainda** 🚨
+⏳ Aguarde o Entregador checar conta em stock e após isso escolha a sua.
 
 """
     # Envia DM
