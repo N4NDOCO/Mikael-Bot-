@@ -41,6 +41,9 @@ async def contas(interaction: discord.Interaction):
 • Fruta no Inv Lv Max (2800) – R$12
 • Tudo Random Aleatória – R$10
 
+--🗒️ Conta Personalizada--
+• Você escolhe dentre as opções.
+
 ✅ Contas seguras
 📦 Entrega em até 2 dias
 ❗ Chame um Entregador no servidor com /call e escolha a conta desejada
