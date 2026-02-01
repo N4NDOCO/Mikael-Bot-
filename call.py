@@ -45,7 +45,7 @@ class Call(commands.Cog):
 
         # ✅ responde rápido (evita erro “aplicativo não respondeu”)
         await interaction.response.send_message(
-            "✅ Veja os chats",
+            "✅ Veja a DM",
             ephemeral=True
         )
 
