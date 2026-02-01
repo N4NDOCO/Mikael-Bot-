@@ -44,11 +44,6 @@ async def contas(interaction: discord.Interaction):
 --🗒️ Conta Personalizada--
 • Você escolhe dentre as opções.
 
-✅ Contas seguras
-📦 Entrega em até 2 dias
-❗ Chame um Entregador no servidor com /call e escolha a conta desejada
-💰 Pagamento via PIX: world.blox018@gmail.com
-🚨 Não pague até o vendedor responder 🚨
 """
     # Envia DM
     await interaction.user.send(msg)
